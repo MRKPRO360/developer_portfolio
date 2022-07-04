@@ -1,0 +1,45 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Poppins',sans-serif;
+    margin:0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.orange-color {
+    color: orange
+}
+.hero {
+    padding: 0 2rem;
+    display: flex;
+    font-size: 1.6rem;
+    background-image: url(./images/top-banner.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.hero >* {
+    flex: 1 1 50%;
+    align-items: center;
+}
+
+.hero div img {
+    width: 100%;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: .5rem 4rem;
+    background-image: linear-gradient(to right bottom, rgb(252,
+        190,
+        3),rgb(252,
+            165,
+            3));
+    color: #fff;
+    border-radius: .3rem;
+}
