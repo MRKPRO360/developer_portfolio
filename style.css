@@ -4,6 +4,7 @@ html {
 body {
     font-family: 'Poppins',sans-serif;
     margin:0;
+
 }
 
 h1 {
@@ -13,21 +14,38 @@ h1 {
 .orange-color {
     color: orange
 }
-.hero {
-    padding: 0 2rem;
+
+section {
     display: flex;
+    gap: 10rem;
+    padding: 0 2rem;
+    margin-bottom: 10rem;
+
+}
+
+section >* {
+    flex: 1 1 50%;
+}
+
+section:not(:last-child) {
+    margin-bottom: 10rem;
+}
+
+.hero , .dream-big {
+    align-items: center;
     font-size: 1.6rem;
-    background-image: url(./images/top-banner.png);
-    height: 100vh;
     background-repeat: no-repeat;
 }
 
-.hero >* {
-    flex: 1 1 50%;
-    align-items: center;
+.hero {
+    background-image: url(./images/top-banner.png);
+}
+.dream-big {
+    background-image: url(./images/dream-bg.png);
+    background-position: right;
 }
 
-.hero div img {
+.hero div img , .dream-big div img{
     width: 100%;
 }
 
